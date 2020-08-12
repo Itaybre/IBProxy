@@ -15,7 +15,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Run Test
-      run: xcodebuild -project IBProxy.xcodeproj -scheme IBProxy -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' build test
+      run: xcodebuild -project IBProxy.xcodeproj -scheme IBProxy -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.6' build test
     - name: Upload Coverage
       run: bash <(curl -s https://codecov.io/bash)
       env:
