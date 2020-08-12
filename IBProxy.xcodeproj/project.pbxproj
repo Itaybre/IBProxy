@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
 		F48657F124E3A00600728860 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48657EF24E3A00600728860 /* HomeViewController.xib */; };
+		F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */; };
+		F486580024E3A2EB00728860 /* IBProxyTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4867F2324AC35320031D2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2224AC35320031D2B6 /* AppDelegate.swift */; };
 		F4867F2524AC35320031D2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2424AC35320031D2B6 /* SceneDelegate.swift */; };
 		F4867F2824AC35320031D2B6 /* IBProxy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */; };
@@ -18,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F48657FD24E3A2EB00728860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4867F1724AC35320031D2B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F48657F624E3A2EB00728860;
+			remoteInfo = IBProxyTunnel;
+		};
 		F4867F3924AC35340031D2B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4867F1724AC35320031D2B6 /* Project object */;
@@ -27,9 +36,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F48657FF24E3A2EB00728860 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F486580024E3A2EB00728860 /* IBProxyTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F48657EE24E3A00600728860 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F48657EF24E3A00600728860 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IBProxyTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		F48657FB24E3A2EB00728860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48657FC24E3A2EB00728860 /* IBProxyTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBProxyTunnel.entitlements; sourceTree = "<group>"; };
 		F4867F1F24AC35320031D2B6 /* IBProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4867F2224AC35320031D2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4867F2424AC35320031D2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F48657F424E3A2EB00728860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4867F1C24AC35320031D2B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,11 +121,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F48657F824E3A2EB00728860 /* IBProxyTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */,
+				F48657FB24E3A2EB00728860 /* Info.plist */,
+				F48657FC24E3A2EB00728860 /* IBProxyTunnel.entitlements */,
+			);
+			path = IBProxyTunnel;
+			sourceTree = "<group>";
+		};
 		F4867F1624AC35320031D2B6 = {
 			isa = PBXGroup;
 			children = (
 				F4867F2124AC35320031D2B6 /* IBProxy */,
 				F4867F3B24AC35340031D2B6 /* IBProxyTests */,
+				F48657F824E3A2EB00728860 /* IBProxyTunnel */,
 				F4867F2024AC35320031D2B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +146,7 @@
 			children = (
 				F4867F1F24AC35320031D2B6 /* IBProxy.app */,
 				F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */,
+				F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +175,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F48657F624E3A2EB00728860 /* IBProxyTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F486580124E3A2EB00728860 /* Build configuration list for PBXNativeTarget "IBProxyTunnel" */;
+			buildPhases = (
+				F48657F324E3A2EB00728860 /* Sources */,
+				F48657F424E3A2EB00728860 /* Frameworks */,
+				F48657F524E3A2EB00728860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBProxyTunnel;
+			productName = IBProxyTunnel;
+			productReference = F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F4867F1E24AC35320031D2B6 /* IBProxy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4867F4124AC35340031D2B6 /* Build configuration list for PBXNativeTarget "IBProxy" */;
@@ -137,10 +200,12 @@
 				F4867F1C24AC35320031D2B6 /* Frameworks */,
 				F4867F1D24AC35320031D2B6 /* Resources */,
 				F48657F224E3A1AC00728860 /* ShellScript */,
+				F48657FF24E3A2EB00728860 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F48657FE24E3A2EB00728860 /* PBXTargetDependency */,
 			);
 			name = IBProxy;
 			productName = IBProxy;
@@ -175,6 +240,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Itaysoft;
 				TargetAttributes = {
+					F48657F624E3A2EB00728860 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					F4867F1E24AC35320031D2B6 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -199,11 +267,19 @@
 			targets = (
 				F4867F1E24AC35320031D2B6 /* IBProxy */,
 				F4867F3724AC35340031D2B6 /* IBProxyTests */,
+				F48657F624E3A2EB00728860 /* IBProxyTunnel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F48657F524E3A2EB00728860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4867F1D24AC35320031D2B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +320,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F48657F324E3A2EB00728860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4867F1B24AC35320031D2B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +350,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F48657FE24E3A2EB00728860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F48657F624E3A2EB00728860 /* IBProxyTunnel */;
+			targetProxy = F48657FD24E3A2EB00728860 /* PBXContainerItemProxy */;
+		};
 		F4867F3A24AC35340031D2B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4867F1E24AC35320031D2B6 /* IBProxy */;
@@ -285,6 +374,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F486580224E3A2EB00728860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IBProxyTunnel/IBProxyTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = IBProxyTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itaysoft.IBProxy.IBProxyTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F486580324E3A2EB00728860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IBProxyTunnel/IBProxyTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = IBProxyTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itaysoft.IBProxy.IBProxyTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		F4867F3F24AC35340031D2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +533,7 @@
 		F4867F4224AC35340031D2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -423,6 +555,7 @@
 		F4867F4324AC35340031D2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -488,6 +621,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F486580124E3A2EB00728860 /* Build configuration list for PBXNativeTarget "IBProxyTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F486580224E3A2EB00728860 /* Debug */,
+				F486580324E3A2EB00728860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4867F1A24AC35320031D2B6 /* Build configuration list for PBXProject "IBProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
