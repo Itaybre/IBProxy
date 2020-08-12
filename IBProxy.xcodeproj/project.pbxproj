@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
+		F48657F124E3A00600728860 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48657EF24E3A00600728860 /* HomeViewController.xib */; };
 		F4867F2324AC35320031D2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2224AC35320031D2B6 /* AppDelegate.swift */; };
 		F4867F2524AC35320031D2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2424AC35320031D2B6 /* SceneDelegate.swift */; };
 		F4867F2824AC35320031D2B6 /* IBProxy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */; };
-		F4867F2A24AC35320031D2B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2924AC35320031D2B6 /* ContentView.swift */; };
 		F4867F2C24AC35340031D2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4867F2B24AC35340031D2B6 /* Assets.xcassets */; };
-		F4867F2F24AC35340031D2B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4867F2E24AC35340031D2B6 /* Preview Assets.xcassets */; };
 		F4867F3224AC35340031D2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4867F3024AC35340031D2B6 /* LaunchScreen.storyboard */; };
 		F4867F3D24AC35340031D2B6 /* IBProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F3C24AC35340031D2B6 /* IBProxyTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F48657EE24E3A00600728860 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48657EF24E3A00600728860 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F4867F1F24AC35320031D2B6 /* IBProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4867F2224AC35320031D2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4867F2424AC35320031D2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4867F2724AC35320031D2B6 /* IBProxy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IBProxy.xcdatamodel; sourceTree = "<group>"; };
-		F4867F2924AC35320031D2B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4867F2B24AC35340031D2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4867F2E24AC35340031D2B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4867F3124AC35340031D2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4867F3324AC35340031D2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +71,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F48657EC24E39FE900728860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F48657EE24E3A00600728860 /* HomeViewController.swift */,
+				F48657EF24E3A00600728860 /* HomeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F48657ED24E39FEF00728860 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F4867F1624AC35320031D2B6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,19 +110,11 @@
 			children = (
 				F4867F2224AC35320031D2B6 /* AppDelegate.swift */,
 				F4867F2424AC35320031D2B6 /* SceneDelegate.swift */,
-				F4867F2924AC35320031D2B6 /* ContentView.swift */,
+				F48657ED24E39FEF00728860 /* Models */,
+				F48657EC24E39FE900728860 /* Views */,
 				F48657EB24E39F7E00728860 /* Resources */,
-				F4867F2D24AC35340031D2B6 /* Preview Content */,
 			);
 			path = IBProxy;
-			sourceTree = "<group>";
-		};
-		F4867F2D24AC35340031D2B6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F4867F2E24AC35340031D2B6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F4867F3B24AC35340031D2B6 /* IBProxyTests */ = {
@@ -200,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4867F3224AC35340031D2B6 /* LaunchScreen.storyboard in Resources */,
-				F4867F2F24AC35340031D2B6 /* Preview Assets.xcassets in Resources */,
 				F4867F2C24AC35340031D2B6 /* Assets.xcassets in Resources */,
+				F48657F124E3A00600728860 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48657F024E3A00600728860 /* HomeViewController.swift in Sources */,
 				F4867F2824AC35320031D2B6 /* IBProxy.xcdatamodeld in Sources */,
 				F4867F2324AC35320031D2B6 /* AppDelegate.swift in Sources */,
-				F4867F2A24AC35320031D2B6 /* ContentView.swift in Sources */,
 				F4867F2524AC35320031D2B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,9 +383,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"IBProxy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PY9WJ3M9MW;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = IBProxy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,9 +404,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"IBProxy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PY9WJ3M9MW;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = IBProxy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
