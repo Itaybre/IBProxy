@@ -11,6 +11,7 @@
 		F48657F124E3A00600728860 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48657EF24E3A00600728860 /* HomeViewController.xib */; };
 		F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */; };
 		F486580024E3A2EB00728860 /* IBProxyTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F486580524E3A39C00728860 /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486580424E3A39C00728860 /* TunnelConfiguration.swift */; };
 		F4867F2324AC35320031D2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2224AC35320031D2B6 /* AppDelegate.swift */; };
 		F4867F2524AC35320031D2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2424AC35320031D2B6 /* SceneDelegate.swift */; };
 		F4867F2824AC35320031D2B6 /* IBProxy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */; };
@@ -57,6 +58,7 @@
 		F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		F48657FB24E3A2EB00728860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F48657FC24E3A2EB00728860 /* IBProxyTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBProxyTunnel.entitlements; sourceTree = "<group>"; };
+		F486580424E3A39C00728860 /* TunnelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelConfiguration.swift; sourceTree = "<group>"; };
 		F4867F1F24AC35320031D2B6 /* IBProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4867F2224AC35320031D2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4867F2424AC35320031D2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		F48657F824E3A2EB00728860 /* IBProxyTunnel */ = {
 			isa = PBXGroup;
 			children = (
+				F486580424E3A39C00728860 /* TunnelConfiguration.swift */,
 				F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */,
 				F48657FB24E3A2EB00728860 /* Info.plist */,
 				F48657FC24E3A2EB00728860 /* IBProxyTunnel.entitlements */,
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F486580524E3A39C00728860 /* TunnelConfiguration.swift in Sources */,
 				F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
