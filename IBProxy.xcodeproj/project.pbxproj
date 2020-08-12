@@ -60,6 +60,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48657EB24E39F7E00728860 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4867F2B24AC35340031D2B6 /* Assets.xcassets */,
+				F4867F3024AC35340031D2B6 /* LaunchScreen.storyboard */,
+				F4867F3324AC35340031D2B6 /* Info.plist */,
+				F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F4867F1624AC35320031D2B6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +95,7 @@
 				F4867F2224AC35320031D2B6 /* AppDelegate.swift */,
 				F4867F2424AC35320031D2B6 /* SceneDelegate.swift */,
 				F4867F2924AC35320031D2B6 /* ContentView.swift */,
-				F4867F2B24AC35340031D2B6 /* Assets.xcassets */,
-				F4867F3024AC35340031D2B6 /* LaunchScreen.storyboard */,
-				F4867F3324AC35340031D2B6 /* Info.plist */,
-				F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */,
+				F48657EB24E39F7E00728860 /* Resources */,
 				F4867F2D24AC35340031D2B6 /* Preview Content */,
 			);
 			path = IBProxy;
@@ -370,7 +378,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IBProxy/Preview Content\"";
 				DEVELOPMENT_TEAM = PY9WJ3M9MW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = IBProxy/Info.plist;
+				INFOPLIST_FILE = IBProxy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +399,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IBProxy/Preview Content\"";
 				DEVELOPMENT_TEAM = PY9WJ3M9MW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = IBProxy/Info.plist;
+				INFOPLIST_FILE = IBProxy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
