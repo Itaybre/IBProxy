@@ -10,20 +10,23 @@ import Foundation
 import NetworkExtension
 
 class TunnelConfiguration {
-    private class Settings {
+    private struct Settings {
         static let mtu: NSNumber = 1400
         static let localhost = "127.0.0.1"
         static let proxyHost = "localhost"
         static let proxyHTTPPort = 12344
         static let proxyHTTPSPort = 12345
+        static let ipv4IP = "192.168.255.255"
+        static let subnetMask = "255.255.255.0"
+        static let ipv6IP = "192.168.255.255"
     }
 
-    func getConfiguration() -> NEPacketTunnelNetworkSettings {
+    static func getSettings() -> NEPacketTunnelNetworkSettings {
         let settings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: Settings.localhost)
         settings.mtu = Settings.mtu
 
-        settings.ipv4Settings = NEIPv4Settings(addresses: ["192.168.255.255"], subnetMasks: ["255.255.255.0"])
-        settings.ipv6Settings = NEIPv6Settings(addresses: ["::ffff:a00:1"], networkPrefixLengths: [96])
+        settings.ipv4Settings = NEIPv4Settings(addresses: [Settings.ipv4IP], subnetMasks: [Settings.subnetMask])
+        settings.ipv6Settings = NEIPv6Settings(addresses: [Settings.ipv6IP], networkPrefixLengths: [96])
 
         settings.proxySettings = NEProxySettings()
         settings.proxySettings?.excludeSimpleHostnames = true
@@ -33,12 +36,12 @@ class TunnelConfiguration {
         settings.proxySettings?.httpsEnabled = true
         settings.proxySettings?.matchDomains = [""]
         settings.proxySettings?.exceptionList = [
-                "192.168.0.0/16",
-                "10.0.0.0/8",
-                "172.16.0.0/12",
-                "127.0.0.1",
-                "localhost",
-                "*.local"
+            "192.168.0.0/16",
+            "10.0.0.0/8",
+            "172.16.0.0/12",
+            "127.0.0.1",
+            "localhost",
+            "*.local"
         ]
 
         return settings
