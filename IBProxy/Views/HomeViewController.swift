@@ -8,12 +8,44 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+protocol HomeViewDelegate: NSObjectProtocol {
+    func updateVPNStatus(_ status: VPNStatus)
+}
+
+class HomeViewController: UIViewController, HomeViewDelegate {
+
+    @IBOutlet weak var vpnToggle: UISwitch!
+    @IBOutlet weak var vpnLabel: UILabel!
+    private let presenter = HomePresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "IBProxy"
+        presenter.setViewDelegate(self)
+
+        title = "IBProxy"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    @IBAction func vpnToggleChanged(_ sender: Any) {
+        presenter.vpnSwitchChanged(vpnToggle.isOn)
+    }
+
+    // MARK: - HomeViewDelegate
+
+    func updateVPNStatus(_ status: VPNStatus) {
+        vpnToggle.isOn = status == .connected || status == .connecting
+
+        let statusLabel = [
+            VPNStatus.connected: "Connected",
+            VPNStatus.connecting: "Connecting",
+            VPNStatus.disconnected: "Disconnected",
+            VPNStatus.disconnecting: "Disconnecting",
+            VPNStatus.invalid: "Invalid",
+            VPNStatus.reasserting: "Reasserting"
+        ]
+
+        vpnLabel.text = statusLabel[status]
     }
 
     /*
