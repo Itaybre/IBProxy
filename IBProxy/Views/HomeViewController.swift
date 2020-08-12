@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
         self.title = "IBProxy"
     }
 
-
     /*
     // MARK: - Navigation
 
