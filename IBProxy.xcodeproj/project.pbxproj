@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F483480924EA3F2000D13AE6 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */; };
+		F483480C24EA3F6F00D13AE6 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483480B24EA3F6F00D13AE6 /* HTTPServer.swift */; };
 		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
 		F48657F124E3A00600728860 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48657EF24E3A00600728860 /* HomeViewController.xib */; };
 		F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F483480B24EA3F6F00D13AE6 /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
 		F48657EE24E3A00600728860 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F48657EF24E3A00600728860 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IBProxyTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F483480A24EA3F5200D13AE6 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				F483480B24EA3F6F00D13AE6 /* HTTPServer.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 		F48657EB24E39F7E00728860 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		F48657F824E3A2EB00728860 /* IBProxyTunnel */ = {
 			isa = PBXGroup;
 			children = (
+				F483480A24EA3F5200D13AE6 /* Proxy */,
 				F486580424E3A39C00728860 /* TunnelConfiguration.swift */,
 				F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */,
 				F48657FB24E3A2EB00728860 /* Info.plist */,
@@ -402,6 +413,7 @@
 			files = (
 				F486580524E3A39C00728860 /* TunnelConfiguration.swift in Sources */,
 				F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */,
+				F483480C24EA3F6F00D13AE6 /* HTTPServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
