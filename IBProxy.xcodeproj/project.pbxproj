@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F483480924EA3F2000D13AE6 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */; };
 		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
 		F48657F124E3A00600728860 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48657EF24E3A00600728860 /* HomeViewController.xib */; };
 		F48657FA24E3A2EB00728860 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657F924E3A2EB00728860 /* PacketTunnelProvider.swift */; };
@@ -85,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F483480924EA3F2000D13AE6 /* CocoaAsyncSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +241,9 @@
 			dependencies = (
 			);
 			name = IBProxyTunnel;
+			packageProductDependencies = (
+				F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */,
+			);
 			productName = IBProxyTunnel;
 			productReference = F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -312,6 +317,9 @@
 				Base,
 			);
 			mainGroup = F4867F1624AC35320031D2B6;
+			packageReferences = (
+				F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+			);
 			productRefGroup = F4867F2024AC35320031D2B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -732,6 +740,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:robbiehanson/CocoaAsyncSocket.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */ = {
