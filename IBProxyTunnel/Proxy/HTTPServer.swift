@@ -12,6 +12,7 @@ import CocoaAsyncSocket
 class HTTPProxy: NSObject {
     let dispatchQueue: DispatchQueue
     let listener: GCDAsyncSocket
+    var connections: [ConnectionHandler] = []
     let port: Int
 
     init(port: Int) {
@@ -39,6 +40,8 @@ class HTTPProxy: NSObject {
 
 extension HTTPProxy: GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket, didAcceptNewSocket newSocket: GCDAsyncSocket) {
-        NSLog("New HTTP Connection")
+        let newConnection = ConnectionHandler(sock)
+        connections.append(newConnection)
+        newConnection.handle()
     }
 }
