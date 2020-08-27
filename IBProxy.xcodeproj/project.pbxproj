@@ -25,6 +25,13 @@
 		F4867F2C24AC35340031D2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4867F2B24AC35340031D2B6 /* Assets.xcassets */; };
 		F4867F3224AC35340031D2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4867F3024AC35340031D2B6 /* LaunchScreen.storyboard */; };
 		F4867F3D24AC35340031D2B6 /* IBProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F3C24AC35340031D2B6 /* IBProxyTests.swift */; };
+		F4AE288224F756CF0035B0AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE288124F756CF0035B0AA /* main.swift */; };
+		F4AE289424F757140035B0AA /* IBProxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE288B24F757130035B0AA /* IBProxyKit.framework */; };
+		F4AE289924F757140035B0AA /* IBProxyKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */; };
+		F4AE289B24F757140035B0AA /* IBProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AE288D24F757130035B0AA /* IBProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4AE28B024F757410035B0AA /* IBProxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE28A724F757410035B0AA /* IBProxyKit.framework */; };
+		F4AE28B524F757410035B0AA /* IBProxyKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */; };
+		F4AE28B724F757410035B0AA /* IBProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AE28A924F757410035B0AA /* IBProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,20 @@
 			remoteGlobalIDString = F4867F1E24AC35320031D2B6;
 			remoteInfo = IBProxy;
 		};
+		F4AE28B124F757410035B0AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4867F1724AC35320031D2B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4AE28A624F757410035B0AA;
+			remoteInfo = "IBProxyKit iOS";
+		};
+		F4AE28BE24F757B40035B0AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4867F1724AC35320031D2B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4AE288A24F757130035B0AA;
+			remoteInfo = "IBProxyKit macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +76,15 @@
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE287D24F756CF0035B0AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -83,6 +113,20 @@
 		F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4867F3C24AC35340031D2B6 /* IBProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyTests.swift; sourceTree = "<group>"; };
 		F4867F3E24AC35340031D2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sample IBProxy macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE288124F756CF0035B0AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4AE288B24F757130035B0AA /* IBProxyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBProxyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE288D24F757130035B0AA /* IBProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBProxyKit.h; sourceTree = "<group>"; };
+		F4AE288E24F757130035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE289324F757140035B0AA /* IBProxyKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBProxyKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyKit_macOSTests.swift; sourceTree = "<group>"; };
+		F4AE289A24F757140035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE28A724F757410035B0AA /* IBProxyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBProxyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE28A924F757410035B0AA /* IBProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBProxyKit.h; sourceTree = "<group>"; };
+		F4AE28AA24F757410035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE28AF24F757410035B0AA /* IBProxyKit iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBProxyKit iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyKit_iOSTests.swift; sourceTree = "<group>"; };
+		F4AE28B624F757410035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +150,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE287C24F756CF0035B0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE288824F757130035B0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE289024F757140035B0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE289424F757140035B0AA /* IBProxyKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28A424F757410035B0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28AC24F757410035B0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE28B024F757410035B0AA /* IBProxyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +280,11 @@
 				F4867F2124AC35320031D2B6 /* IBProxy */,
 				F4867F3B24AC35340031D2B6 /* IBProxyTests */,
 				F48657F824E3A2EB00728860 /* IBProxyTunnel */,
+				F4AE288024F756CF0035B0AA /* Sample IBProxy macOS */,
+				F4AE288C24F757130035B0AA /* IBProxyKit macOS */,
+				F4AE289724F757140035B0AA /* IBProxyKit macOSTests */,
+				F4AE28A824F757410035B0AA /* IBProxyKit iOS */,
+				F4AE28B324F757410035B0AA /* IBProxyKit iOSTests */,
 				F4867F2024AC35320031D2B6 /* Products */,
 				F486581124E3AD7500728860 /* Frameworks */,
 			);
@@ -210,6 +296,11 @@
 				F4867F1F24AC35320031D2B6 /* IBProxy.app */,
 				F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */,
 				F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */,
+				F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */,
+				F4AE288B24F757130035B0AA /* IBProxyKit.framework */,
+				F4AE289324F757140035B0AA /* IBProxyKit macOSTests.xctest */,
+				F4AE28A724F757410035B0AA /* IBProxyKit.framework */,
+				F4AE28AF24F757410035B0AA /* IBProxyKit iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,7 +329,70 @@
 			path = IBProxyTests;
 			sourceTree = "<group>";
 		};
+		F4AE288024F756CF0035B0AA /* Sample IBProxy macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE288124F756CF0035B0AA /* main.swift */,
+			);
+			path = "Sample IBProxy macOS";
+			sourceTree = "<group>";
+		};
+		F4AE288C24F757130035B0AA /* IBProxyKit macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE288D24F757130035B0AA /* IBProxyKit.h */,
+				F4AE288E24F757130035B0AA /* Info.plist */,
+			);
+			path = "IBProxyKit macOS";
+			sourceTree = "<group>";
+		};
+		F4AE289724F757140035B0AA /* IBProxyKit macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */,
+				F4AE289A24F757140035B0AA /* Info.plist */,
+			);
+			path = "IBProxyKit macOSTests";
+			sourceTree = "<group>";
+		};
+		F4AE28A824F757410035B0AA /* IBProxyKit iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE28A924F757410035B0AA /* IBProxyKit.h */,
+				F4AE28AA24F757410035B0AA /* Info.plist */,
+			);
+			path = "IBProxyKit iOS";
+			sourceTree = "<group>";
+		};
+		F4AE28B324F757410035B0AA /* IBProxyKit iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */,
+				F4AE28B624F757410035B0AA /* Info.plist */,
+			);
+			path = "IBProxyKit iOSTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4AE288624F757130035B0AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE289B24F757140035B0AA /* IBProxyKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28A224F757410035B0AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE28B724F757410035B0AA /* IBProxyKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F48657F624E3A2EB00728860 /* IBProxyTunnel */ = {
@@ -300,6 +454,95 @@
 			productReference = F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F4AE287E24F756CF0035B0AA /* Sample IBProxy macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE288524F756CF0035B0AA /* Build configuration list for PBXNativeTarget "Sample IBProxy macOS" */;
+			buildPhases = (
+				F4AE287B24F756CF0035B0AA /* Sources */,
+				F4AE287C24F756CF0035B0AA /* Frameworks */,
+				F4AE287D24F756CF0035B0AA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample IBProxy macOS";
+			productName = "Sample IBProxy macOS";
+			productReference = F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */;
+			productType = "com.apple.product-type.tool";
+		};
+		F4AE288A24F757130035B0AA /* IBProxyKit macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE289C24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOS" */;
+			buildPhases = (
+				F4AE288624F757130035B0AA /* Headers */,
+				F4AE288724F757130035B0AA /* Sources */,
+				F4AE288824F757130035B0AA /* Frameworks */,
+				F4AE288924F757130035B0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBProxyKit macOS";
+			productName = "IBProxyKit macOS";
+			productReference = F4AE288B24F757130035B0AA /* IBProxyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4AE289224F757140035B0AA /* IBProxyKit macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE289F24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOSTests" */;
+			buildPhases = (
+				F4AE288F24F757140035B0AA /* Sources */,
+				F4AE289024F757140035B0AA /* Frameworks */,
+				F4AE289124F757140035B0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4AE28BF24F757B40035B0AA /* PBXTargetDependency */,
+			);
+			name = "IBProxyKit macOSTests";
+			productName = "IBProxyKit macOSTests";
+			productReference = F4AE289324F757140035B0AA /* IBProxyKit macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4AE28A624F757410035B0AA /* IBProxyKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE28B824F757410035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit iOS" */;
+			buildPhases = (
+				F4AE28A224F757410035B0AA /* Headers */,
+				F4AE28A324F757410035B0AA /* Sources */,
+				F4AE28A424F757410035B0AA /* Frameworks */,
+				F4AE28A524F757410035B0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBProxyKit iOS";
+			productName = "IBProxyKit iOS";
+			productReference = F4AE28A724F757410035B0AA /* IBProxyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4AE28AE24F757410035B0AA /* IBProxyKit iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE28BB24F757410035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit iOSTests" */;
+			buildPhases = (
+				F4AE28AB24F757410035B0AA /* Sources */,
+				F4AE28AC24F757410035B0AA /* Frameworks */,
+				F4AE28AD24F757410035B0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4AE28B224F757410035B0AA /* PBXTargetDependency */,
+			);
+			name = "IBProxyKit iOSTests";
+			productName = "IBProxyKit iOSTests";
+			productReference = F4AE28AF24F757410035B0AA /* IBProxyKit iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +562,21 @@
 					F4867F3724AC35340031D2B6 = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = F4867F1E24AC35320031D2B6;
+					};
+					F4AE287E24F756CF0035B0AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F4AE288A24F757130035B0AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F4AE289224F757140035B0AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F4AE28A624F757410035B0AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F4AE28AE24F757410035B0AA = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -341,6 +599,11 @@
 				F4867F1E24AC35320031D2B6 /* IBProxy */,
 				F4867F3724AC35340031D2B6 /* IBProxyTests */,
 				F48657F624E3A2EB00728860 /* IBProxyTunnel */,
+				F4AE287E24F756CF0035B0AA /* Sample IBProxy macOS */,
+				F4AE288A24F757130035B0AA /* IBProxyKit macOS */,
+				F4AE289224F757140035B0AA /* IBProxyKit macOSTests */,
+				F4AE28A624F757410035B0AA /* IBProxyKit iOS */,
+				F4AE28AE24F757410035B0AA /* IBProxyKit iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +627,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F4867F3624AC35340031D2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE288924F757130035B0AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE289124F757140035B0AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28A524F757410035B0AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28AD24F757410035B0AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,6 +734,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4AE287B24F756CF0035B0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE288224F756CF0035B0AA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE288724F757130035B0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE288F24F757140035B0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE289924F757140035B0AA /* IBProxyKit_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28A324F757410035B0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE28AB24F757410035B0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AE28B524F757410035B0AA /* IBProxyKit_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -455,6 +784,16 @@
 			isa = PBXTargetDependency;
 			target = F4867F1E24AC35320031D2B6 /* IBProxy */;
 			targetProxy = F4867F3924AC35340031D2B6 /* PBXContainerItemProxy */;
+		};
+		F4AE28B224F757410035B0AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4AE28A624F757410035B0AA /* IBProxyKit iOS */;
+			targetProxy = F4AE28B124F757410035B0AA /* PBXContainerItemProxy */;
+		};
+		F4AE28BF24F757B40035B0AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4AE288A24F757130035B0AA /* IBProxyKit macOS */;
+			targetProxy = F4AE28BE24F757B40035B0AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -716,6 +1055,220 @@
 			};
 			name = Release;
 		};
+		F4AE288324F756CF0035B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4AE288424F756CF0035B0AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F4AE289D24F757140035B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBProxyKit macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-macOS";
+				PRODUCT_NAME = IBProxyKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4AE289E24F757140035B0AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBProxyKit macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-macOS";
+				PRODUCT_NAME = IBProxyKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4AE28A024F757140035B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = "IBProxyKit macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4AE28A124F757140035B0AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = "IBProxyKit macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F4AE28B924F757410035B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBProxyKit iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-iOS";
+				PRODUCT_NAME = IBProxyKit;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4AE28BA24F757410035B0AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBProxyKit iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-iOS";
+				PRODUCT_NAME = IBProxyKit;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4AE28BC24F757410035B0AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = "IBProxyKit iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4AE28BD24F757410035B0AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PY9WJ3M9MW;
+				INFOPLIST_FILE = "IBProxyKit iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,6 +1304,51 @@
 			buildConfigurations = (
 				F4867F4524AC35340031D2B6 /* Debug */,
 				F4867F4624AC35340031D2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE288524F756CF0035B0AA /* Build configuration list for PBXNativeTarget "Sample IBProxy macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE288324F756CF0035B0AA /* Debug */,
+				F4AE288424F756CF0035B0AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE289C24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE289D24F757140035B0AA /* Debug */,
+				F4AE289E24F757140035B0AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE289F24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE28A024F757140035B0AA /* Debug */,
+				F4AE28A124F757140035B0AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE28B824F757410035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE28B924F757410035B0AA /* Debug */,
+				F4AE28BA24F757410035B0AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE28BB24F757410035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE28BC24F757410035B0AA /* Debug */,
+				F4AE28BD24F757410035B0AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
