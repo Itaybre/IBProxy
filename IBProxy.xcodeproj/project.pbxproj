@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F483480924EA3F2000D13AE6 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */; };
 		F483480C24EA3F6F00D13AE6 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483480B24EA3F6F00D13AE6 /* HTTPServer.swift */; };
 		F483480E24EA438300D13AE6 /* ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483480D24EA438300D13AE6 /* ConnectionHandler.swift */; };
 		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
@@ -25,12 +24,9 @@
 		F4867F2C24AC35340031D2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4867F2B24AC35340031D2B6 /* Assets.xcassets */; };
 		F4867F3224AC35340031D2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4867F3024AC35340031D2B6 /* LaunchScreen.storyboard */; };
 		F4867F3D24AC35340031D2B6 /* IBProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4867F3C24AC35340031D2B6 /* IBProxyTests.swift */; };
-		F4AE288224F756CF0035B0AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE288124F756CF0035B0AA /* main.swift */; };
 		F4AE289424F757140035B0AA /* IBProxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE288B24F757130035B0AA /* IBProxyKit.framework */; };
-		F4AE289924F757140035B0AA /* IBProxyKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */; };
 		F4AE289B24F757140035B0AA /* IBProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AE288D24F757130035B0AA /* IBProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4AE28B024F757410035B0AA /* IBProxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE28A724F757410035B0AA /* IBProxyKit.framework */; };
-		F4AE28B524F757410035B0AA /* IBProxyKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */; };
 		F4AE28B724F757410035B0AA /* IBProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AE28A924F757410035B0AA /* IBProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -77,15 +73,6 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4AE287D24F756CF0035B0AA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -113,19 +100,15 @@
 		F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4867F3C24AC35340031D2B6 /* IBProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyTests.swift; sourceTree = "<group>"; };
 		F4867F3E24AC35340031D2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sample IBProxy macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE288124F756CF0035B0AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F4AE288B24F757130035B0AA /* IBProxyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBProxyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AE288D24F757130035B0AA /* IBProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBProxyKit.h; sourceTree = "<group>"; };
 		F4AE288E24F757130035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AE289324F757140035B0AA /* IBProxyKit macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBProxyKit macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyKit_macOSTests.swift; sourceTree = "<group>"; };
 		F4AE289A24F757140035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AE28A724F757410035B0AA /* IBProxyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBProxyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AE28A924F757410035B0AA /* IBProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBProxyKit.h; sourceTree = "<group>"; };
 		F4AE28AA24F757410035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AE28AF24F757410035B0AA /* IBProxyKit iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBProxyKit iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBProxyKit_iOSTests.swift; sourceTree = "<group>"; };
 		F4AE28B624F757410035B0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F483480924EA3F2000D13AE6 /* CocoaAsyncSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,13 +129,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F4867F3524AC35340031D2B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4AE287C24F756CF0035B0AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,10 +255,10 @@
 				F4867F2124AC35320031D2B6 /* IBProxy */,
 				F4867F3B24AC35340031D2B6 /* IBProxyTests */,
 				F48657F824E3A2EB00728860 /* IBProxyTunnel */,
-				F4AE288024F756CF0035B0AA /* Sample IBProxy macOS */,
 				F4AE288C24F757130035B0AA /* IBProxyKit macOS */,
 				F4AE289724F757140035B0AA /* IBProxyKit macOSTests */,
 				F4AE28A824F757410035B0AA /* IBProxyKit iOS */,
+				F4AE28C024F758490035B0AA /* IBProxyKit Source */,
 				F4AE28B324F757410035B0AA /* IBProxyKit iOSTests */,
 				F4867F2024AC35320031D2B6 /* Products */,
 				F486581124E3AD7500728860 /* Frameworks */,
@@ -296,7 +271,6 @@
 				F4867F1F24AC35320031D2B6 /* IBProxy.app */,
 				F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */,
 				F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */,
-				F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */,
 				F4AE288B24F757130035B0AA /* IBProxyKit.framework */,
 				F4AE289324F757140035B0AA /* IBProxyKit macOSTests.xctest */,
 				F4AE28A724F757410035B0AA /* IBProxyKit.framework */,
@@ -329,14 +303,6 @@
 			path = IBProxyTests;
 			sourceTree = "<group>";
 		};
-		F4AE288024F756CF0035B0AA /* Sample IBProxy macOS */ = {
-			isa = PBXGroup;
-			children = (
-				F4AE288124F756CF0035B0AA /* main.swift */,
-			);
-			path = "Sample IBProxy macOS";
-			sourceTree = "<group>";
-		};
 		F4AE288C24F757130035B0AA /* IBProxyKit macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,7 +315,6 @@
 		F4AE289724F757140035B0AA /* IBProxyKit macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE289824F757140035B0AA /* IBProxyKit_macOSTests.swift */,
 				F4AE289A24F757140035B0AA /* Info.plist */,
 			);
 			path = "IBProxyKit macOSTests";
@@ -367,10 +332,16 @@
 		F4AE28B324F757410035B0AA /* IBProxyKit iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE28B424F757410035B0AA /* IBProxyKit_iOSTests.swift */,
 				F4AE28B624F757410035B0AA /* Info.plist */,
 			);
 			path = "IBProxyKit iOSTests";
+			sourceTree = "<group>";
+		};
+		F4AE28C024F758490035B0AA /* IBProxyKit Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "IBProxyKit Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,7 +381,6 @@
 			);
 			name = IBProxyTunnel;
 			packageProductDependencies = (
-				F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */,
 			);
 			productName = IBProxyTunnel;
 			productReference = F48657F724E3A2EB00728860 /* IBProxyTunnel.appex */;
@@ -454,23 +424,6 @@
 			productReference = F4867F3824AC35340031D2B6 /* IBProxyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F4AE287E24F756CF0035B0AA /* Sample IBProxy macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F4AE288524F756CF0035B0AA /* Build configuration list for PBXNativeTarget "Sample IBProxy macOS" */;
-			buildPhases = (
-				F4AE287B24F756CF0035B0AA /* Sources */,
-				F4AE287C24F756CF0035B0AA /* Frameworks */,
-				F4AE287D24F756CF0035B0AA /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Sample IBProxy macOS";
-			productName = "Sample IBProxy macOS";
-			productReference = F4AE287F24F756CF0035B0AA /* Sample IBProxy macOS */;
-			productType = "com.apple.product-type.tool";
-		};
 		F4AE288A24F757130035B0AA /* IBProxyKit macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4AE289C24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOS" */;
@@ -479,6 +432,7 @@
 				F4AE288724F757130035B0AA /* Sources */,
 				F4AE288824F757130035B0AA /* Frameworks */,
 				F4AE288924F757130035B0AA /* Resources */,
+				F4AE28C624F7627C0035B0AA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -563,17 +517,16 @@
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = F4867F1E24AC35320031D2B6;
 					};
-					F4AE287E24F756CF0035B0AA = {
-						CreatedOnToolsVersion = 11.5;
-					};
 					F4AE288A24F757130035B0AA = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 					F4AE289224F757140035B0AA = {
 						CreatedOnToolsVersion = 11.5;
 					};
 					F4AE28A624F757410035B0AA = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 					F4AE28AE24F757410035B0AA = {
 						CreatedOnToolsVersion = 11.5;
@@ -590,7 +543,6 @@
 			);
 			mainGroup = F4867F1624AC35320031D2B6;
 			packageReferences = (
-				F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
 			);
 			productRefGroup = F4867F2024AC35320031D2B6 /* Products */;
 			projectDirPath = "";
@@ -599,11 +551,10 @@
 				F4867F1E24AC35320031D2B6 /* IBProxy */,
 				F4867F3724AC35340031D2B6 /* IBProxyTests */,
 				F48657F624E3A2EB00728860 /* IBProxyTunnel */,
-				F4AE287E24F756CF0035B0AA /* Sample IBProxy macOS */,
-				F4AE288A24F757130035B0AA /* IBProxyKit macOS */,
-				F4AE289224F757140035B0AA /* IBProxyKit macOSTests */,
 				F4AE28A624F757410035B0AA /* IBProxyKit iOS */,
+				F4AE288A24F757130035B0AA /* IBProxyKit macOS */,
 				F4AE28AE24F757410035B0AA /* IBProxyKit iOSTests */,
+				F4AE289224F757140035B0AA /* IBProxyKit macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -698,6 +649,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		F4AE28C624F7627C0035B0AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -734,14 +702,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4AE287B24F756CF0035B0AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4AE288224F756CF0035B0AA /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4AE288724F757130035B0AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,7 +713,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AE289924F757140035B0AA /* IBProxyKit_macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,7 +727,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AE28B524F757410035B0AA /* IBProxyKit_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1055,35 +1013,10 @@
 			};
 			name = Release;
 		};
-		F4AE288324F756CF0035B0AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PY9WJ3M9MW;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		F4AE288424F756CF0035B0AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PY9WJ3M9MW;
-				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		F4AE289D24F757140035B0AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1104,6 +1037,7 @@
 				PRODUCT_NAME = IBProxyKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1113,6 +1047,7 @@
 		F4AE289E24F757140035B0AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1182,6 +1117,7 @@
 		F4AE28B924F757410035B0AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1199,6 +1135,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itaysoft.IBProxyKit-iOS";
 				PRODUCT_NAME = IBProxyKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1209,6 +1146,7 @@
 		F4AE28BA24F757410035B0AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1308,15 +1246,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4AE288524F756CF0035B0AA /* Build configuration list for PBXNativeTarget "Sample IBProxy macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4AE288324F756CF0035B0AA /* Debug */,
-				F4AE288424F756CF0035B0AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F4AE289C24F757140035B0AA /* Build configuration list for PBXNativeTarget "IBProxyKit macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1354,25 +1283,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:robbiehanson/CocoaAsyncSocket.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.6.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F483480824EA3F2000D13AE6 /* CocoaAsyncSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F483480724EA3F2000D13AE6 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
-			productName = CocoaAsyncSocket;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F4867F2624AC35320031D2B6 /* IBProxy.xcdatamodeld */ = {
