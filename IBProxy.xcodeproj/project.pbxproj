@@ -12,6 +12,7 @@
 		F431E6C724FCBDE90032282C /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431E6C624FCBDE90032282C /* Socket+Server.swift */; };
 		F431E6C824FCBDE90032282C /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431E6C624FCBDE90032282C /* Socket+Server.swift */; };
 		F431E6E024FE064E0032282C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431E6DF24FE064E0032282C /* main.swift */; };
+		F465770D2500B331005CBD2A /* SocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8126E24FF5483008DB21C /* SocketTests.swift */; };
 		F483480C24EA3F6F00D13AE6 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483480B24EA3F6F00D13AE6 /* HTTPServer.swift */; };
 		F483480E24EA438300D13AE6 /* ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483480D24EA438300D13AE6 /* ConnectionHandler.swift */; };
 		F48657F024E3A00600728860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48657EE24E3A00600728860 /* HomeViewController.swift */; };
@@ -838,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F465770D2500B331005CBD2A /* SocketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
