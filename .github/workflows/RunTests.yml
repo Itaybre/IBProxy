@@ -21,6 +21,8 @@ jobs:
         known_hosts: github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
     - name: Run Test
       run: bundle exec fastlane ios test
+      env:
+        MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
         
   testiOS:
     name: Run macOS tests
@@ -34,13 +36,10 @@ jobs:
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
-    - name: Install certificates
-      run: | 
-        fastlane match development --readonly
-      env:
-        MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Run Test
       run: bundle exec fastlane mac test
+      env:
+        MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Upload Coverage
       run: bash <(curl -s https://codecov.io/bash)
       env:
