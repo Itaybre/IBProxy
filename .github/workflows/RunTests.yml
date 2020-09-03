@@ -20,7 +20,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
     - name: Run Test
-      run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.6' build test
+      run: bundle exec fastlane ios test
         
   testiOS:
     name: Run macOS tests
@@ -40,7 +40,7 @@ jobs:
       env:
         MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Run Test
-      run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit macOS"  -sdk macosx build test
+      run: bundle exec fastlane mac test
     - name: Upload Coverage
       run: bash <(curl -s https://codecov.io/bash)
       env:
