@@ -24,11 +24,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_KEY }}
     - name: Install certificates
       run: | 
         fastlane match development --readonly
       env:
-        MATCH_REPO: https://${{secrets.GIT_TOKEN}}@github.com/Itaybre/match.git
         MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Run Test
       run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit macOS"  -sdk macosx build test
