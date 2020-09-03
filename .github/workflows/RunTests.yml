@@ -26,7 +26,7 @@ jobs:
       uses: actions/checkout@master
     - name: Install certificates
       run: | 
-        fastlane match development
+        fastlane match development --readonly
       env:
         MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Run Test
