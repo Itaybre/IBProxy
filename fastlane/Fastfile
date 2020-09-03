@@ -8,7 +8,7 @@ platform :ios do
   end
 end
 
-platform :mac do
+platform :macos do
   desc "Run tests for macOS"
   lane :test do
     if is_ci
@@ -25,7 +25,7 @@ platform :mac do
         readonly: true,
         keychain_name: "CI",
         keychain_password: ENV["MATCH_PASSWORD"],
-        platform: mac
+        platform: macos
       )
       sh("security list-keychains -d user")
       sh("security default-keychain -d user")
