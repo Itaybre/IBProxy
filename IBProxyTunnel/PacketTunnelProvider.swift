@@ -9,8 +9,17 @@
 import NetworkExtension
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
+    var httpProxy: HTTPProxy!
+    var httpsProxy: HTTPProxy!
+
     override func startTunnel(options: [String: NSObject]?,
                               completionHandler: @escaping (Error?) -> Void) {
+        httpProxy = HTTPProxy(port: 12344)
+        httpsProxy = HTTPProxy(port: 12345)
+
+        httpProxy.startAccepting()
+        httpsProxy.startAccepting()
+
         let settings = TunnelConfiguration.getSettings()
 
         setTunnelNetworkSettings(settings) { error in
@@ -24,23 +33,25 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     }
 
     override func stopTunnel(with reason: NEProviderStopReason, completionHandler: @escaping () -> Void) {
-        // Add code here to start the process of stopping the tunnel.
+        httpProxy.stop()
+        httpsProxy.stop()
         completionHandler()
     }
 
     override func handleAppMessage(_ messageData: Data, completionHandler: ((Data?) -> Void)?) {
-        // Add code here to handle the message.
         if let handler = completionHandler {
             handler(messageData)
         }
     }
 
     override func sleep(completionHandler: @escaping () -> Void) {
-        // Add code here to get ready to sleep.
+        httpProxy.stop()
+        httpsProxy.stop()
         completionHandler()
     }
 
     override func wake() {
-        // Add code here to wake up.
+        httpProxy.startAccepting()
+        httpsProxy.startAccepting()
     }
 }

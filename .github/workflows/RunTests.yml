@@ -7,15 +7,25 @@ on:
   pull_request:
 
 jobs:
-  test:
-    name: Run tests
+  testMacOS:
+    name: Run macOS tests
     runs-on: macOS-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@master
     - name: Run Test
-      run: xcodebuild -project IBProxy.xcodeproj -scheme IBProxy -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.6' build test
+      run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.6' build test
+
+  testiOS:
+    name: Run iOS tests
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Run Test
+      run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit macOS"  -sdk macosx build test
     - name: Upload Coverage
       run: bash <(curl -s https://codecov.io/bash)
       env:
