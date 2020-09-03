@@ -3,8 +3,16 @@ default_platform(:ios)
 platform :ios do
   desc "Run tests for iOS"
   lane :test do
-    sync_code_signing(type: "development", readonly: true, platform: ios)
-    run_tests(project: 'IBProxy.xcodeproj', scheme: 'IBProxyKit iOS', code_coverage: true)
+    sync_code_signing(
+      type: "development", 
+      readonly: true, 
+      platform: "ios"
+    )
+    run_tests(
+      project: 'IBProxy.xcodeproj', 
+      scheme: 'IBProxyKit iOS', 
+      code_coverage: true
+    )
   end
 end
 
@@ -25,13 +33,25 @@ platform :macos do
         readonly: true,
         keychain_name: "CI",
         keychain_password: ENV["MATCH_PASSWORD"],
-        platform: macos
+        platform: "macos",
+        skip_provisioning_profiles: true
       )
       sh("security list-keychains -d user")
       sh("security default-keychain -d user")
       sh("security find-identity -v -p codesigning CI")
+    else
+      sync_code_signing(
+        type: "development", 
+        readonly: true, 
+        platform: "macos", 
+        skip_provisioning_profiles: true
+      )
     end
 
-    run_tests(project: 'IBProxy.xcodeproj', scheme: 'IBProxyKit macOS', code_coverage: true)
+    run_tests(
+      project: 'IBProxy.xcodeproj', 
+      scheme: 'IBProxyKit macOS', 
+      code_coverage: true
+    )
   end
 end

@@ -24,10 +24,10 @@ Run tests for iOS
 
 ----
 
-## Mac
-### mac test
+## macos
+### macos test
 ```
-fastlane mac test
+fastlane macos test
 ```
 Run tests for macOS
 
