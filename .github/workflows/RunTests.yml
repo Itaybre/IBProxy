@@ -8,7 +8,7 @@ on:
 
 jobs:
   testMacOS:
-    name: Run macOS tests
+    name: Run iOS tests
     runs-on: macOS-latest
 
     steps:
@@ -18,12 +18,17 @@ jobs:
       run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.6' build test
 
   testiOS:
-    name: Run iOS tests
+    name: Run macOS tests
     runs-on: macOS-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    - name: Install certificates
+      run: | 
+        fastlane match development
+      env:
+        MATCH_PASSWORD: ${{ secrets.MATCH_PASS }}
     - name: Run Test
       run: xcodebuild -project IBProxy.xcodeproj -scheme "IBProxyKit macOS"  -sdk macosx build test
     - name: Upload Coverage
