@@ -1,0 +1,6 @@
+git_url("git@github.com:Itaybre/match.git")
+storage_mode("git")
+type("development")
+app_identifier(["com.itaysoft.IBProxyKit-macOS", "com.itaysoft.IBProxyKit-iOS"])
+
+# username("user@fastlane.tools") # Your Apple Developer Portal username
