@@ -38,14 +38,6 @@
                BlueprintName = "IBProxyKit macOSTests"
                ReferencedContainer = "container:IBProxy.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "SocketTests/testAcceptConnection()">
-               </Test>
-               <Test
-                  Identifier = "SocketTests/testSendAndReceiveData()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

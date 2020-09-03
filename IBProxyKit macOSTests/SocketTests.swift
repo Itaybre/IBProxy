@@ -64,7 +64,6 @@ class SocketTests: XCTestCase {
         XCTAssertEqual(thrownError as? SocketError, SocketError.bindFailed("Permission denied"))
     }
 
-    // Disabled due to unstability
     func testAcceptConnection() throws {
         let exp = expectation(description: "Wait socket connect")
 
@@ -101,7 +100,6 @@ class SocketTests: XCTestCase {
         XCTAssertEqual(received, "Example Message")
     }
 
-    // Disabled due to unstability
     func testSendAndReceiveData() throws {
         let exp = expectation(description: "Wait socket connect")
 
